@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+main{
+    margin:  auto;
+    box-sizing: border-box;
+    max-width: 1400px;
+    align-items: center;
+}
+
+  .bodys {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1, h2, h3 {
+    margin-bottom: 10px;
+  }
+
+  .intro {
+    padding: 15px;
+    text-align: center;
+    background-color: #aeaeae;
+  }
+
+  .timeline {
+    padding: 15px;
+  }
+
+  .timeline__block {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    background-color: #ccc;
+    padding: 5px;
+  }
+
+  .timeline__year {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .timeline__title{
+    text-align: center;
+  }
+
+  .timeline__text {
+    font-size: 17px;
+    color: #000000;
+  }
+
+  .timeline__text-info{
+    margin-top: 8px;
+  }
+
+
+  .timeline__images {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-bottom: 0;
+    border-radius: 8px;
+  }
+
+  .main-content__tank-images {
+    max-width: 300px; 
+    height: auto;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+  .main-content__tank-images {
+      max-width: 120px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline__images {
+      gap: 8px; 
+  }
+
+  .main-content__tank-images {
+      max-width: 100px; 
+  }
+}
+
+@media (max-width: 319px) {
+  .timeline__images {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .main-content__tank-images {
+      max-width: 80%; 
+  }
+}
+
+.comparison {
+    padding: 15px;
+    background-color: #ebebeb;
+}
+
+.comparison__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(4, auto); 
+    gap: 10px; 
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.comparison__cell {
+    background-color: #ccc;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+    .comparison__grid {
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 5px; 
+        transform: scale(0.8);
+        transform-origin: top center; 
+        width: 100%; 
+    }
+
+    .comparison__cell {
+        font-size: 10px; 
+        padding: 5px; 
+    }
+}
+
+@media (max-width: 320px) {
+    .comparison__grid {
+        transform: scale(1);
+        transform-origin: top center;
+    }
+
+    .comparison__cell {
+        font-size: 8px;
+        padding: 3px;
+    }
+}
+
+body {
+    margin: 0; 
+    overflow-x: hidden; 
+}

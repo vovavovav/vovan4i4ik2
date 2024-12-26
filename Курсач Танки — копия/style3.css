@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+main {
+  margin: auto;
+  box-sizing: border-box;
+  max-width: 1400px;
+  align-items: center;
+}
+
+.main__header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main__section {
+  margin-bottom: 20px;
+}
+
+.main__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.main__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.timeline__text-info3 {
+  margin-top: 8px;
+  text-align: left;
+}
+
+.main__item {
+  flex: 1 1 calc(50% - 20px);
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  max-width: 600px;
+}
+
+.main__item img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.comparison {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.comparison__grid2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.comparison__cell {
+  background-color: #ccc;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .main__item {
+    flex: 1 1 calc(100% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .main__item {
+    flex: 1 1 100%;
+  }
+
+  .main__list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .comparison__grid2 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    transform: scale(0.9);
+    transform-origin: top center;
+  }
+
+  .comparison__cell {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main__title {
+    font-size: 18px;
+  }
+
+  .main__item {
+    flex: 1 1 100%;
+    max-width: 320px;
+  }
+
+  .comparison__grid2 {
+    grid-template-columns: repeat(4, 1fr);
+    transform: scale(1);
+  }
+
+  .comparison__cell {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
